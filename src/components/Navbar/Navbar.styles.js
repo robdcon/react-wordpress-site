@@ -8,7 +8,7 @@ export const StyledCollapsableNav = styled.nav`
     justify-content: space-between;
     align-items:center;
     height:100px;
-    background-color: transparent;
+    background-color: rgba(0,0,0,.5);
 
     position: fixed;
     top: 0;

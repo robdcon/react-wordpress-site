@@ -5,27 +5,15 @@ import Navbar from '../Navbar/Navbar';
 // import CollapsableNavMenu from './CollapsableNavMenu';
 
 
-const PageWrapper = () => 
+const PageWrapper = (props) => 
 {
-    // constructor(props)
-    // {
-    //     super(props)
-    //     this.state=
-    //     {
-    //         menuOpen:false
-    //     }
-    // }
+   
 
     const [menuOpen, setMenuOpen] = useState(false);
 
 
     const toggleMenu = () =>
     {
-        // console.log('Fired!')
-        // this.setState((prevState) =>
-        // ({
-        //     menuOpen: !prevState.menuOpen
-        // }))
         setMenuOpen(!menuOpen);
     }
 
@@ -34,8 +22,8 @@ const PageWrapper = () =>
 
           <div>
               {/* <CollapsableNavMenu open={this.state.menuOpen} toggleMenu={() => {this.toggleMenu()}}></CollapsableNavMenu> */}
-              <Navbar toggleMenu={() => {toggleMenu()}} collapsed={this.state.menuOpen} />
-              {this.props.children}
+              <Navbar toggleMenu={() => {toggleMenu()}} collapsed={menuOpen} />
+              {props.children}
           </div>
       )
 

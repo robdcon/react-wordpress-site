@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { StyledMenuButton } from './MenuButton.styles';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const MenuButton = (props) => 
+const MenuButton = (props) =>
 {
     return(
 
