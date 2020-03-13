@@ -8,7 +8,7 @@ export default function useAxios(url) {
     useEffect(() => {
         async function loadData() {
             await Axios.get(url)
-                        .then(res => setData(res.data));
+                       .then(res => setData(res.data));
         }
 
         loadData();

@@ -25,7 +25,7 @@ function App() {
         path='/'
         render={props =>(
           <PageWrapper>
-            <Posts {...props} />
+            <Home {...props} />
           </PageWrapper>
         )}
       /> 
