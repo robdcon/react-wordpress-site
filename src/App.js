@@ -9,8 +9,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Template from './Template/Template';
+import Template from './components/Template';
 import Blog from './components/Pages/Blog/Blog';
+import Posts from './components/Posts';
 
 
 function App() {
@@ -20,14 +21,14 @@ function App() {
       <Router>
 
       <Route
-          exact={true}
-          path='/'
-          render={props =>(
-            <PageWrapper>
-              <Blog {...props} />
-            </PageWrapper>
-          )}
-        /> 
+        exact={true}
+        path='/'
+        render={props =>(
+          <PageWrapper>
+            <Posts {...props} />
+          </PageWrapper>
+        )}
+      /> 
 
       </Router>
    
